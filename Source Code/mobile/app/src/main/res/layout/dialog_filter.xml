@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:background="@drawable/bg_bottom_dialog"
+   >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filter"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:padding="9dp"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+        <RadioButton
+            android:id="@+id/rb_price_low_to_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_low_to_high"
+            android:textColor="@color/white"
+            android:layout_marginStart="12dp"
+            android:button="@drawable/checkbox"
+            android:textSize="16sp"
+            android:padding="24dp"
+            tools:ignore="TouchTargetSizeCheck" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_price_high_to_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_high_to_low"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginStart="12dp"
+            android:button="@drawable/checkbox"
+            android:padding="24dp"
+            tools:ignore="TouchTargetSizeCheck" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            />
+        <RadioButton
+            android:id="@+id/rb_a_z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_z"
+            android:textColor="@color/white"
+            android:layout_marginStart="12dp"
+            android:button="@drawable/checkbox"
+            android:textSize="16sp"
+            android:padding="24dp"
+            tools:ignore="TouchTargetSizeCheck" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            />
+        <RadioButton
+            android:id="@+id/rb_z_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/z_a"
+            android:textSize="16sp"
+            android:padding="24dp"
+            android:layout_marginStart="12dp"
+            android:button="@drawable/checkbox"
+            android:textColor="@color/white"
+            tools:ignore="TouchTargetSizeCheck" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/apply"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="32dp"
+        android:background="@drawable/bg_button"/>
+
+</LinearLayout>
